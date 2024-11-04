@@ -31,16 +31,14 @@
     <PackageReference Include="MSTest.TestFramework" Version="3.0.2" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Jobbr.Storage.MsSql\Jobbr.Storage.MsSql.csproj" />
-    <ProjectReference Include="..\submodules\devsupport\src\Jobbr.DevSupport.ReferencedVersionAsserter\Jobbr.DevSupport.ReferencedVersionAsserter.csproj" />
+    <ProjectReference Include="..\..\ComponentModel\ArtefactStorage\Jobbr.ComponentModel.ArtefactStorage.csproj" />
+    <ProjectReference Include="..\..\ComponentModel\Execution\Jobbr.ComponentModel.Execution.csproj" />
+    <ProjectReference Include="..\..\ComponentModel\Management\Jobbr.ComponentModel.Management.csproj" />
+    <ProjectReference Include="..\..\Server\Jobbr.Server.csproj" />
+    <ProjectReference Include="..\MsSql\Jobbr.Storage.MsSql.csproj" />
+    <ProjectReference Include="..\..\DevSupport\ReferencedVersionAsserter\Jobbr.DevSupport.ReferencedVersionAsserter.csproj" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="Jobbr.ComponentModel.ArtefactStorage" Version="3.0.0" />
-    <PackageReference Include="Jobbr.ComponentModel.Execution" Version="3.0.0" />
-    <PackageReference Include="Jobbr.ComponentModel.JobStorage" Version="3.0.0" />
-    <PackageReference Include="Jobbr.ComponentModel.Management" Version="3.0.0" />
-    <PackageReference Include="Jobbr.ComponentModel.Registration" Version="3.0.0" />
-    <PackageReference Include="Jobbr.Server" Version="3.0.0" />
     <PackageReference Include="ServiceStack.OrmLite.SqlServer" Version="6.8.0" />
     <PackageReference Include="Shouldly" Version="4.2.1" />
     <PackageReference Include="System.Memory" Version="4.5.5" />
@@ -48,6 +46,6 @@
     <PackageReference Include="System.ValueTuple" Version="4.5.0" />
   </ItemGroup>
   <ImportGroup>
-    <Import Project="..\submodules\devsupport\src\Jobbr.DevSupport.StyleCopAnalyzer\Jobbr.DevSupport.StyleCopAnalyzer.targets" />
+    <Import Project="..\..\DevSupport\StyleCopAnalyzer\Jobbr.DevSupport.StyleCopAnalyzer.targets" />
   </ImportGroup>
 </Project>

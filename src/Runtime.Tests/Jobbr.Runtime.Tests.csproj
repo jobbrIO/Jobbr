@@ -28,10 +28,10 @@
     <PackageReference Include="MSTest.TestFramework" Version="3.0.2" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Jobbr.Runtime\Jobbr.Runtime.csproj" />
-    <ProjectReference Include="..\Jobbr.SampleTaskLibrary\Jobbr.SampleTaskLibrary.csproj" />
+    <ProjectReference Include="..\Runtime\Jobbr.Runtime.csproj" />
+    <ProjectReference Include="..\..\samples\Jobbr.SampleTaskLibrary\Jobbr.SampleTaskLibrary.csproj" />
   </ItemGroup>
   <ImportGroup>
-    <Import Project="..\submodules\devsupport\src\Jobbr.DevSupport.StyleCopAnalyzer\Jobbr.DevSupport.StyleCopAnalyzer.targets" />
+    <Import Project="..\DevSupport\StyleCopAnalyzer\Jobbr.DevSupport.StyleCopAnalyzer.targets" />
   </ImportGroup>
 </Project>

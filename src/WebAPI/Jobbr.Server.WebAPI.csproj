@@ -12,15 +12,15 @@
     <FrameworkReference Include="Microsoft.AspNetCore.App" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="Jobbr.ComponentModel.Management" Version="3.0.0" />
-    <PackageReference Include="Jobbr.ComponentModel.Registration" Version="3.0.0" />
     <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="6.0.3" />
     <PackageReference Include="SimpleInjector" Version="5.4.1" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Jobbr.Server.WebAPI.Model\Jobbr.Server.WebAPI.Model.csproj" />
+    <ProjectReference Include="..\ComponentModel\Management\Jobbr.ComponentModel.Management.csproj" />
+    <ProjectReference Include="..\ComponentModel\Registration\Jobbr.ComponentModel.Registration.csproj" />
+    <ProjectReference Include="..\WebAPI.Model\Jobbr.Server.WebAPI.Model.csproj" />
   </ItemGroup>
   <ImportGroup>
-    <Import Project="..\submodules\devsupport\src\Jobbr.DevSupport.StyleCopAnalyzer\Jobbr.DevSupport.StyleCopAnalyzer.targets" />
+    <Import Project="..\DevSupport\StyleCopAnalyzer\Jobbr.DevSupport.StyleCopAnalyzer.targets" />
   </ImportGroup>
 </Project>

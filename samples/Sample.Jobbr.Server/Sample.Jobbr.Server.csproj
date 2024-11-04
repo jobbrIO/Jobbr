@@ -18,15 +18,13 @@
     <DebugType>pdbonly</DebugType>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="Jobbr.ComponentModel.JobStorage" Version="3.0.0" />
-    <PackageReference Include="Jobbr.Execution.Forked" Version="3.0.0" />
-    <PackageReference Include="Jobbr.Server" Version="3.0.0" />
-    <PackageReference Include="Jobbr.Storage.MsSql" Version="3.0.0" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\Jobbr.Dashboard\Jobbr.Dashboard.csproj" />
+    <ProjectReference Include="..\..\src\ComponentModel\JobStorage\Jobbr.ComponentModel.JobStorage.csproj" />
+    <ProjectReference Include="..\..\src\Dashboard\Jobbr.Dashboard.csproj" />
+    <ProjectReference Include="..\..\src\Execution\Forked\Server\Jobbr.Server.ForkedExecution.csproj" />
+    <ProjectReference Include="..\..\src\Server\Jobbr.Server.csproj" />
+    <ProjectReference Include="..\..\src\Storage\MsSql\Jobbr.Storage.MsSql.csproj" />
   </ItemGroup>
   <ImportGroup>
-    <Import Project="..\submodules\devsupport\src\Jobbr.DevSupport.StyleCopAnalyzer\Jobbr.DevSupport.StyleCopAnalyzer.targets" />
+    <Import Project="..\..\src\DevSupport\StyleCopAnalyzer\Jobbr.DevSupport.StyleCopAnalyzer.targets" />
   </ImportGroup>
 </Project>

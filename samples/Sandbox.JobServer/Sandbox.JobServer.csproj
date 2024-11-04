@@ -15,16 +15,17 @@
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
   </PropertyGroup>
-    <ItemGroup>
-    <PackageReference Include="Jobbr.Server" Version="3.0.0" />
-    <PackageReference Include="Jobbr.Execution.Forked" Version="3.0.0" />
-    <PackageReference Include="Jobbr.Storage.MsSql" Version="3.0.0" />
-    <PackageReference Include="Jobbr.ComponentModel.JobStorage" Version="3.0.0" />
-    <PackageReference Include="Jobbr.ComponentModel.ArtefactStorage" Version="3.0.0" />
-    <PackageReference Include="Jobbr.ComponentModel.Execution" Version="3.0.0" />
-  </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Jobbr.Server.WebAPI\Jobbr.Server.WebAPI.csproj" />
+    <ProjectReference Include="..\..\src\ComponentModel\ArtefactStorage\Jobbr.ComponentModel.ArtefactStorage.csproj" />
+    <ProjectReference Include="..\..\src\ComponentModel\Execution\Jobbr.ComponentModel.Execution.csproj" />
+    <ProjectReference Include="..\..\src\ComponentModel\JobStorage\Jobbr.ComponentModel.JobStorage.csproj" />
+    <ProjectReference Include="..\..\src\Execution\Forked\Server\Jobbr.Server.ForkedExecution.csproj" />
+    <ProjectReference Include="..\..\src\Storage\MsSql\Jobbr.Storage.MsSql.csproj" />
+    <ProjectReference Include="..\..\src\WebAPI\Jobbr.Server.WebAPI.csproj" />
+    <ProjectReference Include="..\Sample.Jobbr.Server\Sample.Jobbr.Server.csproj" />
     <ProjectReference Include="..\Sandbox.JobRunner\Sandbox.JobRunner.csproj" />
   </ItemGroup>
+  <ImportGroup>
+    <Import Project="..\..\src\DevSupport\StyleCopAnalyzer\Jobbr.DevSupport.StyleCopAnalyzer.targets" />
+  </ImportGroup>
 </Project>

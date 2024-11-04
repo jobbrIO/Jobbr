@@ -9,6 +9,6 @@
     <None Include="README.md" />
   </ItemGroup>
   <ImportGroup>
-    <Import Project="..\Jobbr.DevSupport.StyleCopAnalyzer\Jobbr.DevSupport.StyleCopAnalyzer.targets" />
+    <Import Project="..\StyleCopAnalyzer\Jobbr.DevSupport.StyleCopAnalyzer.targets" />
   </ImportGroup>
 </Project>

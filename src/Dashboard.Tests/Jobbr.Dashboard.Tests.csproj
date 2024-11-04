@@ -25,17 +25,16 @@
   </PropertyGroup>
   <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />
   <ItemGroup>
-    <PackageReference Include="Jobbr.ComponentModel.JobStorage" Version="3.0.0" />
-    <PackageReference Include="Jobbr.Server" Version="3.0.0" />
     <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.5.0" />
     <PackageReference Include="MSTest.TestAdapter" Version="3.0.2" />
     <PackageReference Include="MSTest.TestFramework" Version="3.0.2" />
     <PackageReference Include="Shouldly" Version="4.2.1" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Jobbr.Dashboard\Jobbr.Dashboard.csproj" />
+    <ProjectReference Include="..\Dashboard\Jobbr.Dashboard.csproj" />
+    <ProjectReference Include="..\Server\Jobbr.Server.csproj" />
   </ItemGroup>
   <ImportGroup>
-    <Import Project="..\submodules\devsupport\src\Jobbr.DevSupport.StyleCopAnalyzer\Jobbr.DevSupport.StyleCopAnalyzer.targets" />
+    <Import Project="..\DevSupport\StyleCopAnalyzer\Jobbr.DevSupport.StyleCopAnalyzer.targets" />
   </ImportGroup>
 </Project>

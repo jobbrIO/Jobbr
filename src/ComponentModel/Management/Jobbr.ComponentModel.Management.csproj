@@ -1,6 +1,8 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <ProjectGuid>{44C1E5B0-5802-48FA-910E-17665587979D}</ProjectGuid>
     <TargetFramework>netstandard2.0</TargetFramework>
   </PropertyGroup>
+  <ImportGroup>
+    <Import Project="..\..\DevSupport\StyleCopAnalyzer\Jobbr.DevSupport.StyleCopAnalyzer.targets" />
+  </ImportGroup>
 </Project>

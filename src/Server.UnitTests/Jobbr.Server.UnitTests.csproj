@@ -30,9 +30,9 @@
     </ItemGroup>
 
     <ItemGroup>
-        <ProjectReference Include="..\Jobbr.Server\Jobbr.Server.csproj" />
+        <ProjectReference Include="..\Server\Jobbr.Server.csproj" />
     </ItemGroup>
     <ImportGroup>
-      <Import Project="..\submodules\devsupport\src\Jobbr.DevSupport.StyleCopAnalyzer\Jobbr.DevSupport.StyleCopAnalyzer.targets" />
+      <Import Project="..\DevSupport\StyleCopAnalyzer\Jobbr.DevSupport.StyleCopAnalyzer.targets" />
     </ImportGroup>
 </Project>

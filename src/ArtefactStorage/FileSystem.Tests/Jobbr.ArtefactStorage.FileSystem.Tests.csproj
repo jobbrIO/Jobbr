@@ -24,15 +24,18 @@
     <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.5.0" />
     <PackageReference Include="MSTest.TestAdapter" Version="3.0.2" />
     <PackageReference Include="MSTest.TestFramework" Version="3.0.2" />
-    <PackageReference Include="Jobbr.ComponentModel.ArtefactStorage" Version="3.0.0" />
-    <PackageReference Include="Jobbr.ComponentModel.Execution" Version="3.0.0" />
-    <PackageReference Include="Jobbr.ComponentModel.JobStorage" Version="3.0.0" />
-    <PackageReference Include="Jobbr.ComponentModel.Management" Version="3.0.0" />
-    <PackageReference Include="Jobbr.ComponentModel.Registration" Version="3.0.0" />
-    <PackageReference Include="Jobbr.Server" Version="3.0.0" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Jobbr.ArtefactStorage.FileSystem\Jobbr.ArtefactStorage.FileSystem.csproj" />
-    <ProjectReference Include="..\submodules\devsupport\src\Jobbr.DevSupport.ReferencedVersionAsserter\Jobbr.DevSupport.ReferencedVersionAsserter.csproj" />
+    <ProjectReference Include="..\..\ComponentModel\ArtefactStorage\Jobbr.ComponentModel.ArtefactStorage.csproj" />
+    <ProjectReference Include="..\..\ComponentModel\Execution\Jobbr.ComponentModel.Execution.csproj" />
+    <ProjectReference Include="..\..\ComponentModel\JobStorage\Jobbr.ComponentModel.JobStorage.csproj" />
+    <ProjectReference Include="..\..\ComponentModel\Management\Jobbr.ComponentModel.Management.csproj" />
+    <ProjectReference Include="..\..\ComponentModel\Registration\Jobbr.ComponentModel.Registration.csproj" />
+    <ProjectReference Include="..\..\Server\Jobbr.Server.csproj" />
+    <ProjectReference Include="..\FileSystem\Jobbr.ArtefactStorage.FileSystem.csproj" />
+    <ProjectReference Include="..\..\DevSupport\ReferencedVersionAsserter\Jobbr.DevSupport.ReferencedVersionAsserter.csproj" />
   </ItemGroup>
+  <ImportGroup>
+    <Import Project="..\..\DevSupport\StyleCopAnalyzer\Jobbr.DevSupport.StyleCopAnalyzer.targets" />
+  </ImportGroup>
 </Project>

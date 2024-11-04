@@ -31,16 +31,13 @@
     <Reference Include="System.ComponentModel.Composition" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Jobbr.Storage.RavenDB\Jobbr.Storage.RavenDB.csproj" />
-    <ProjectReference Include="..\submodules\devsupport\src\Jobbr.DevSupport.ReferencedVersionAsserter\Jobbr.DevSupport.ReferencedVersionAsserter.csproj" />
+    <ProjectReference Include="..\..\ComponentModel\ArtefactStorage\Jobbr.ComponentModel.ArtefactStorage.csproj" />
+    <ProjectReference Include="..\..\ComponentModel\Execution\Jobbr.ComponentModel.Execution.csproj" />
+    <ProjectReference Include="..\..\ComponentModel\Management\Jobbr.ComponentModel.Management.csproj" />
+    <ProjectReference Include="..\RavenDB\Jobbr.Storage.RavenDB.csproj" />
+    <ProjectReference Include="..\..\DevSupport\ReferencedVersionAsserter\Jobbr.DevSupport.ReferencedVersionAsserter.csproj" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="Jobbr.ComponentModel.ArtefactStorage" Version="1.0.1" />
-    <PackageReference Include="Jobbr.ComponentModel.Execution" Version="1.0.1" />
-    <PackageReference Include="Jobbr.ComponentModel.JobStorage" Version="1.0.1" />
-    <PackageReference Include="Jobbr.ComponentModel.Management" Version="1.0.1" />
-    <PackageReference Include="Jobbr.ComponentModel.Registration" Version="1.0.1" />
-    <PackageReference Include="Jobbr.Server" Version="1.0.0" />
     <PackageReference Include="Microsoft.Owin.Host.HttpListener" Version="4.2.2" />
     <PackageReference Include="Owin" Version="1.0.0" />
     <PackageReference Include="RavenDB.Client" Version="3.5.9" />

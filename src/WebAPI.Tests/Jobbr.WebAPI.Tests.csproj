@@ -23,21 +23,21 @@
   </PropertyGroup>
   <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />
   <ItemGroup>
-    <PackageReference Include="Jobbr.Server" Version="3.0.0" />
     <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.5.0" />
     <PackageReference Include="MSTest.TestAdapter" Version="3.0.2" />
     <PackageReference Include="MSTest.TestFramework" Version="3.0.2" />
-    <PackageReference Include="Jobbr.ComponentModel.JobStorage" Version="3.0.0" />
-    <PackageReference Include="Jobbr.ComponentModel.ArtefactStorage" Version="3.0.0" />
-    <PackageReference Include="Jobbr.ComponentModel.Execution" Version="3.0.0" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Jobbr.Client\Jobbr.Client.csproj" />
-    <ProjectReference Include="..\Jobbr.Server.WebAPI.Model\Jobbr.Server.WebAPI.Model.csproj" />
-    <ProjectReference Include="..\Jobbr.Server.WebAPI\Jobbr.Server.WebAPI.csproj" />
-    <ProjectReference Include="..\submodules\devsupport\src\Jobbr.DevSupport.ReferencedVersionAsserter\Jobbr.DevSupport.ReferencedVersionAsserter.csproj" />
+    <ProjectReference Include="..\Client\Jobbr.Client.csproj" />
+    <ProjectReference Include="..\ComponentModel\ArtefactStorage\Jobbr.ComponentModel.ArtefactStorage.csproj" />
+    <ProjectReference Include="..\ComponentModel\Execution\Jobbr.ComponentModel.Execution.csproj" />
+    <ProjectReference Include="..\ComponentModel\JobStorage\Jobbr.ComponentModel.JobStorage.csproj" />
+    <ProjectReference Include="..\Server\Jobbr.Server.csproj" />
+    <ProjectReference Include="..\WebAPI.Model\Jobbr.Server.WebAPI.Model.csproj" />
+    <ProjectReference Include="..\WebAPI\Jobbr.Server.WebAPI.csproj" />
+    <ProjectReference Include="..\DevSupport\ReferencedVersionAsserter\Jobbr.DevSupport.ReferencedVersionAsserter.csproj" />
   </ItemGroup>
   <ImportGroup>
-    <Import Project="..\submodules\devsupport\src\Jobbr.DevSupport.StyleCopAnalyzer\Jobbr.DevSupport.StyleCopAnalyzer.targets" />
+    <Import Project="..\DevSupport\StyleCopAnalyzer\Jobbr.DevSupport.StyleCopAnalyzer.targets" />
   </ImportGroup>
 </Project>
