@@ -8,6 +8,12 @@
   <ItemGroup>
     <ProjectReference Include="..\WebAPI.Model\Jobbr.Server.WebAPI.Model.csproj" />
   </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Nerdbank.GitVersioning" Version="3.6.146">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
   <ImportGroup>
     <Import Project="..\DevSupport\StyleCopAnalyzer\Jobbr.DevSupport.StyleCopAnalyzer.targets" />
   </ImportGroup>

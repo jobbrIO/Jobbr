@@ -21,6 +21,12 @@
     <ProjectReference Include="..\..\ComponentModel\ArtefactStorage\Jobbr.ComponentModel.ArtefactStorage.csproj" />
     <ProjectReference Include="..\..\ComponentModel\Registration\Jobbr.ComponentModel.Registration.csproj" />
   </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Nerdbank.GitVersioning" Version="3.6.146">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
   <ImportGroup>
     <Import Project="..\..\DevSupport\StyleCopAnalyzer\Jobbr.DevSupport.StyleCopAnalyzer.targets" />
   </ImportGroup>
